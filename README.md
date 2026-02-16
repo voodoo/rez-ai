@@ -64,6 +64,8 @@ vercel deploy
    - **Publish directory:** `.next`
 6. Click "Deploy site"
 
+**Note:** You may need to install the [Netlify Next.js plugin](https://docs.netlify.com/integrations/frameworks/next-js/) for best results. Vercel is recommended if you want a simpler setup.
+
 ### Self-Hosted (VPS/Dedicated Server)
 
 ```bash
