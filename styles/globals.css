@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #0a0a0a;
+  color: #d0d0d0;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.infinity-logo {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  opacity: 0.9;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 8px;
+  letter-spacing: -1px;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #a0a0a0;
+  font-weight: 400;
+}
+
+/* Bio */
+.bio {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #c0c0c0;
+  margin-bottom: 60px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Sections */
+section {
+  margin-bottom: 60px;
+}
+
+section h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #808080;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 24px;
+}
+
+/* Experience */
+.job {
+  margin-bottom: 40px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.job:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 8px;
+  gap: 20px;
+}
+
+.job h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.date {
+  font-size: 0.85rem;
+  color: #707070;
+  white-space: nowrap;
+}
+
+.role {
+  font-size: 0.95rem;
+  color: #a0a0a0;
+  font-style: italic;
+  margin-bottom: 12px;
+}
+
+.job p {
+  margin-bottom: 8px;
+  color: #c0c0c0;
+  line-height: 1.6;
+}
+
+.tech {
+  font-size: 0.85rem;
+  color: #808080;
+  margin-top: 12px;
+  font-family: 'Monaco', 'Courier New', monospace;
+}
+
+/* Skills */
+.skill-group {
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.skill-group:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.skill-group h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.skill-group p {
+  font-size: 0.9rem;
+  color: #a0a0a0;
+  line-height: 1.6;
+}
+
+/* Art Section */
+.art p {
+  color: #c0c0c0;
+  line-height: 1.8;
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 48px 32px;
+  border-radius: 4px;
+  margin-bottom: 60px;
+}
+
+.cta h2 {
+  margin-bottom: 16px;
+}
+
+.cta p {
+  font-size: 1rem;
+  color: #a0a0a0;
+  margin-bottom: 24px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 16px 48px;
+  background: #ffffff;
+  color: #0a0a0a;
+  text-decoration: none;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-button:hover {
+  background: #e0e0e0;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.15);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  color: #606060;
+  font-size: 0.85rem;
+  padding-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  margin-top: 80px;
+}
+
+/* Mobile / One-Handed Optimization */
+@media (max-width: 768px) {
+  .container {
+    padding: 32px 16px;
+  }
+
+  .header {
+    margin-bottom: 40px;
+  }
+
+  .infinity-logo {
+    font-size: 3rem;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  section h2 {
+    font-size: 1.4rem;
+  }
+
+  .job-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .cta {
+    padding: 36px 24px;
+  }
+
+  .cta-button {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 24px 12px;
+  }
+
+  .infinity-logo {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+  }
+
+  .header h1 {
+    font-size: 1.6rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .bio {
+    font-size: 0.9rem;
+  }
+
+  section h2 {
+    font-size: 0.85rem;
+  }
+
+  .job h3 {
+    font-size: 1rem;
+  }
+
+  .date {
+    font-size: 0.75rem;
+  }
+
+  .cta-button {
+    padding: 14px 28px;
+    font-size: 0.9rem;
+    min-height: 44px;
+  }
+}
